@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Muthu Suspension Works" },
+      { name: "description", content: "Redirect Master creates a professional, SEO-optimized redirect page for automotive suspension services." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Muthu Suspension Works" },
+      { property: "og:description", content: "Redirect Master creates a professional, SEO-optimized redirect page for automotive suspension services." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Muthu Suspension Works" },
+      { name: "twitter:description", content: "Redirect Master creates a professional, SEO-optimized redirect page for automotive suspension services." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1ba760ab-c5b6-44bd-951a-557c44fde945/id-preview-a5d5d3a5--fea6c958-91f3-440c-995b-8d186c11781c.lovable.app-1782983684611.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1ba760ab-c5b6-44bd-951a-557c44fde945/id-preview-a5d5d3a5--fea6c958-91f3-440c-995b-8d186c11781c.lovable.app-1782983684611.png" },
     ],
     links: [
       {

@@ -90,7 +90,32 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": "https://muthususpensionworks.com/#organization",
+              name: "Muthu Suspension Works",
+              url: "https://muthususpensionworks.com",
+              logo: "https://muthususpensionworks.lovable.app/favicon.png",
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://muthususpensionworks.lovable.app/#website",
+              name: "Muthu Suspension Works",
+              url: "https://muthususpensionworks.lovable.app",
+              publisher: { "@id": "https://muthususpensionworks.com/#organization" },
+            },
+          ],
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
